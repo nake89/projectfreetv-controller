@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Project Free TV Controler plugin",
+  "version": "1.0",
+
+  "description": "Make controller/gamepad work with projectfreetv",
+
+  "icons": {
+    "48": "icons/controller.svg",
+    "96": "icons/controller.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://projectfreetv.one/*"],
+      "js": ["app.js"]
+    }
+  ]
+}
